@@ -12,11 +12,12 @@
 .tab button {
   background-color: inherit;
   float: left;
-  border: 2px solid #4CAF50;
+  border: 1px solid #77DD77;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  margin: auto;
 }
 
 /* Change background color of buttons on hover */
