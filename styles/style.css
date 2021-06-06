@@ -78,9 +78,16 @@
   text-align: center;
 }
 
-
-p {
-  color: #77DD77;
+.addCart {
+  background-color: #77DD77;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 footer{
