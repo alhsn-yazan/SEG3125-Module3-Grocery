@@ -11,13 +11,16 @@
 <div class="title">
 	<h1>Quickstop Groceries</h1>
 </div>
+	
+<div class="subtitle">
+	<h2>Order high-quality groceries in three quick and simple steps!</h2>
+</div>
 
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
   <button class="accordion" onclick="openInfo(event, 'Client')">Step One: Select Dietary Restrictions</button>
 	<div id="Client" class="tabcontent">
-  	<h3>Client Information</h3>
-  	<p>Tell us a bit about yourself.</p>
+  	<h3>Tell us a bit about yourself by selecting a suitable option:</h3>
 	Choose a Category:
 	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
 	<option value=""></option>
@@ -27,21 +30,21 @@
 	<option value="NutFreeORG">Nut-free (Organic)</option>
     	<option value="None">None</option>
 	</select>
-</div>
+	<br>
+	</div>
 
-  <button class="accordion" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="accordion" onclick="openInfo(event, 'Products')">Step Two: Select the products you would like to purchase.</button>
 	<div id="Products" class="tabcontent">
-  	<h3>Your targeted products</h3>
-  	<p>We preselected products based on your restrictions.</p>
-	 Choose items to buy:
-	 <div id="displayProduct"></div>
-	 <button id="addCart" type="button" class="block" onclick="selectedItems()">Add selected items to cart.</button>
+  	<h3>Based on your selected dietary restriction the following products are available:</h3>
+	<div id="displayProduct"></div>
+	<button id="addCart" type="button" class="block" onclick="selectedItems()">Add selected items to cart.</button>
+	<br>
 	</div>
 	
-  <button class="accordion" onclick="openInfo(event, 'Cart')">Cart</button>
+	
+  <button class="accordion" onclick="openInfo(event, 'Cart')">Step Three: Review your cart and total price.</button>
 	<div id="Cart" class="tabcontent">
-  	<h3>Cart</h3>
-  	<p>Here is your cart.</p>
+  	<h3>Here is your cart:</h3>
 	<div id="displayCart"></div>
 	</div>
 	
