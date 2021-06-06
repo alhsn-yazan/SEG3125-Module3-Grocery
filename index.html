@@ -21,7 +21,7 @@
   <button class="accordion" onclick="openInfo(event, 'Client')">Step One: Select Dietary Restriction</button>
 	<br>
 	<div id="Client" class="tabcontent">
-  	<h3>Tell us a bit about yourself by selecting a suitable option.</h3>
+  	<h3>Tell us a bit about yourself by selecting a dietary restriction or preference:</h3>
 	<input type="radio" id="LactoseFree" name="dietSelect" value="LactoseFree" onchange="populateListProductChoices(this.id, 'displayProduct')">
 	<label for="LactoseFree">Lactose-free</label><br>
 	<input type="radio" id="NutFree" name="dietSelect" value="NutFree" onchange="populateListProductChoices(this.id, 'displayProduct')">
@@ -31,7 +31,7 @@
 	<input type="radio" id="NutFreeORG" name="dietSelect" value="NutFreeORG" onchange="populateListProductChoices(this.id, 'displayProduct')">
 	<label for="NutFreeORG">Nut-free (Organic)</label><br>
 	<input type="radio" id="None" name="dietSelect" value="None" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<label for="None">None</label><br>
+	<label for="None">No preference</label><br>
 	<br>
 	<br>
 	</div>
