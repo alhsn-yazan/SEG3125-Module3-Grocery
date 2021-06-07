@@ -37,6 +37,7 @@
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+  margin: auto;
 }
 
  /* Style the buttons that are used to open and close the accordion panel */
@@ -50,6 +51,7 @@
   border: none;
   outline: none;
   transition: 0.4s;
+  margin: auto;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
